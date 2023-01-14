@@ -1,0 +1,18 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "login": "john.doe",
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@email.com"
+    },
+    {
+      "id": 2,
+      "login": "Smith.Adamd12d1",
+      "first_name": "Smith",
+      "last_name": "Adam",
+      "email": "Smith.Adam@email.com"
+    }
+  ]
+}
