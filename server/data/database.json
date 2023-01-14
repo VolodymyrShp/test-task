@@ -9,10 +9,17 @@
     },
     {
       "id": 2,
-      "login": "Smith.Adamd12d1",
+      "login": "Smith.Adamd",
       "first_name": "Smith",
       "last_name": "Adam",
       "email": "Smith.Adam@email.com"
+    },
+    {
+      "id": 3,
+      "login": "volodymerSP",
+      "first_name": "Volodymyr",
+      "last_name": "Shpachuk",
+      "email": "vladimir.shpachuk@gmail.com"
     }
   ]
 }
