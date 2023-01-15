@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(166, 196, 230);
+}
+#app{
+    margin: 30px auto;
+    padding: 20px;
+    width: 800px;
+    display: block;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+input{
+    padding: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+table{
+    text-align: center;
+    margin: 10px auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border: 1.5px solid black;
+    
+}
+th, td{
+    padding: 10px;
+    border-left: 1.5px solid black;
+    border-bottom: 1.5px solid black;
+}
+button{
+    padding: 5px;
+}
+th, td:nth-child(6){
+    width: 100px;
+}
+th, td:nth-child(7){
+    width: 100px;
+}
+.popup__delete-confirm {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup__inner{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: #fff;
+    width: 400px;
+    height: 150px;
+    padding: 15px;
+    border-radius: 15px; 
+}
+.popup__inner p{
+    margin: 20px 0 5px 0;
+}
+.popup__inner button{
+    margin-top: 10px;
+    width: 40px;
+}
+.popup__inner button + button{
+    margin-left: 287px;
+}
+.Form-save, .Form-cancel{
+    width: 50px;
+}
+.Form-save{
+    margin-left: 660px;
+}

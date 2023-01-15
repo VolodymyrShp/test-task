@@ -22,6 +22,9 @@ usersRoutes.get('/user/:id', (req, res, next) => {
 })
 usersRoutes.post('/user/create', (req, res) => {
     const existUsers = getUserData()
+    let userId = {
+        id: `${existUsers.users.length + 1}`
+    }
     try {
         existUsers.users[existUsers.users.length] = req.body
         saveUserData(existUsers)
@@ -33,6 +36,7 @@ usersRoutes.put('/user/edit/:id', (req, res) => {
     try {
         existUsers.users[req.params['id'] - 1] = req.body
         saveUserData(existUsers)
+        res.status(200).send({ message: `User with id ${req.params['id']} has been edit`, })
     } catch (e) { res.status(500).json(e) }
 })
 usersRoutes.delete('/user/delete/:id', (req, res) => {
