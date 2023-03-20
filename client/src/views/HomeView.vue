@@ -29,8 +29,8 @@ export default {
                 <th></th>
             </tr>
         </thead>
-        <tbody v-for='user in users' id="data__output">
-            <tr>
+        <tbody id="data__output">
+            <tr v-for='user in users'>
                 <td>{{ user.id }}</td>
                 <td>{{ user.login }}</td>
                 <td>{{ user.first_name }}</td>
@@ -39,7 +39,6 @@ export default {
                 <td><button @click="$router.push(`edit/${user.id}`)">Edit</button></td>
                 <td><button @click="$router.push(`user/delete/${user.id}`)">Delete</button></td>
             </tr>
-            
         </tbody>
     </table>
     <button @click="$router.push('create')">Create New User</button>

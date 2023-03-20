@@ -7,8 +7,9 @@ const PORT = process.env.PORT || 8080;
 
 
 app.use(cors({
-    origin: '127.0.0.1"5500',
+    origin: '*',
 }));
+
 
 
 app.use(express.json())

@@ -13,7 +13,6 @@ export default {
 }
 
 </script>
-
 <template>
 
     <div class="popup__delete-confirm">
